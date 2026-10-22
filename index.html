@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptChat - Chat das Criaturas</title>
+    <!-- Ligação com o arquivo de Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+       <div class="nav-sidebar">
+            <!-- Ícone redondo com a foto de perfil do Jeff no topo -->
+            <div class="nav-logo" style="width: 40px; height: 40px; border-radius: 50%; overflow: hidden; padding: 0; display: flex; justify-content: center; align-items: center;">
+                <img src="Jeff.jpg" alt="Perfil Jeff" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            
+            <div class="nav-icons">
+                <div class="nav-icon active" title="Chats">💬<span class="badge-notification">3</span></div>
+                <div class="nav-icon" title="Covis/Grupos">👥</div>
+                <div class="nav-icon" title="Grimório/Arquivos">📜</div>
+
+            </div>
+            
+            <!-- Último ícone inferior mantido  -->
+            <div class="nav-icon" title="Sair">🚪</div>
+        </div>
+
+       <!-- 2. Lista de Chats -->
+        <div class="chat-list-panel">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar contato">
+            </div>
+            <div class="conversations">
+                <!-- 1. O Grupo Principal -->
+                <div class="conversation-item active">
+                    <div class="avatar">
+                        <img src="simbologrupo.jpg">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Creepypastas</span>
+                            <span class="chat-time">02:15</span>
+                        </div>
+                        <div class="chat-last-msg">Jeff: Vai dormir! 🔪</div>
+                    </div>
+                </div>
+
+                <!-- 2. NinaTheKiller -->
+                <div class="conversation-item">
+                    <div class="avatar">
+                        <img src="nina.jpg">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">NinaTheKiller</span>
+                            <span class="chat-time">02:12</span>
+                        </div>
+                        <div class="chat-last-msg" style="color: #ff3366; font-weight: bold;">Jeff querido??Pq n me responde?!</div>
+                    </div>
+                    <!-- Badge de 68 mensagens não lidas -->
+                    <div class="badge-notification" style="position: static; margin-left: 8px;">68</div>
+                </div>
+
+                <!-- 3. Smile Dog -->
+                <div class="conversation-item">
+                    <div class="avatar">
+                        <img src="smiledogImagem.jpg">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Smile Dog</span>
+                            <span class="chat-time">01:50</span>
+                        </div>
+                        <div class="chat-last-msg">👍 Visto às 01:52</div>
+                    </div>
+                </div>
+
+                <!-- Slenderman -->
+                <div class="conversation-item">
+                    <div class="avatar">
+                        <img src="SlendermanImagem.jpg">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Slenderman</span>
+                            <span class="chat-time">01:30</span>
+                        </div>
+                        <div class="chat-last-msg">...</div>
+                    </div>
+                </div>
+
+                <!-- Long Horse -->
+                <div class="conversation-item">
+                    <div class="avatar">
+                        <img src="LongHorse.jpg">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Long Horse</span>
+                            <span class="chat-time">Ontem</span>
+                        </div>
+                        <div class="chat-last-msg" style="color: #ff3366; font-weight: bold;">Tome cuidado, garoto.</div>
+                    </div>
+                    <div class="badge-notification" style="position: static; margin-left: 8px;">1</div>
+                </div>
+
+                <!-- Bob -->
+                <div class="conversation-item">
+                    <div class="avatar">
+                        <img src="Bob.jpg">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Bob</span>
+                            <span class="chat-time">Ontem</span>
+                        </div>
+                        <div class="chat-last-msg">Olá, tudo bem por aí?</div>
+                    </div>
+                </div>
+
+                <!-- Liu (Bloqueado) -->
+                <div class="conversation-item" style="opacity: 0.5;">
+                    <div class="avatar">
+                        <img src="Liu.jpg">
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Liu</span>
+                            <span class="chat-time">Ontem</span>
+                        </div>
+                        <div class="chat-last-msg">Esta conversa está bloqueada</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3. Área Principal do Chat -->
+        <div class="chat-main-area">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <h3>Creepypastas</h3>
+                    <p> 4 online</p>
+                </div>
+                <div class="chat-header-actions">
+                    <span>🔍</span>
+                    <span>📞</span>
+                    <span>⋮</span>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message received">
+                    <strong>LaughingJack 🎪:</strong> KAKAKAKKAKAKAKAKAKKA
+                    <div class="message-time">02:10</div>
+                </div>
+
+                <div class="message received">
+                    <strong>Slenderman 🎩:</strong> Jeff, você pegou aquilo que te pedi? na floresta
+                    <div class="message-time">02:12</div>
+                </div>
+
+                <div class="message sent">
+                    Ahhh, vai dormir Slanderm, para de encher 🙄.
+                    <div class="message-time">02:15 ✓✓</div>
+                </div>
+                <div class="message received">
+                    <strong>Clockwork ⏱️ :</strong> Jeff, precisamos dessa pagina até a amanhã kkk
+                    <div class="message-time">02:12</div>
+                </div>
+                <div class="message received">
+                     <strong>EyelessJack 🫁 :</strong>....
+                     <div style="margin-top: 8px;">
+                         <img src="paginas.jpg" alt="Foto Macabra" style="width: 100%; max-width: 200px; border-radius: 8px; border: 1px solid #8b0000;"></div>
+                      <div class="message-time">02:18</div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" placeholder="Digite sua mensagem...">
+                <button class="send-btn">⚡</button>
+            </div>
+        </div>
+
+        <!-- Informações do Grupo -->
+        <div class="group-info-panel">
+            <div class="panel-title">Detalhes do Grupo</div>
+            
+            <div class="section-label"> Mídias (1)</div>
+            <div class="media-grid">
+                <div class="media-thumbnail">📜 Paginas</div>
+                <div class="media-thumbnail">📷 Foto</div>
+            </div>
+
+            <div class="section-label">Membros (9)</div>
+            <div class="member-list">
+                <div class="member-item">🔪 JeffTheKiller</div>
+                <div class="member-item">🐺 SmileDog </div>
+                <div class="member-item">🎩Slenderman</div>
+                <div class="member-item">🐴 LongHorse</div>
+                <div class="member-item">🎀 NinaTheKiller</div>
+                <div class="member-item">⏱️ Clockwork</div>
+                <div class="member-item">🫁 EyelessJack</div>
+                <div class="member-item">🎮 BenDrowed</div>
+                <div class="member-item">🎪 LaughingJack</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ligação com o arquivo de Comportamento JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
